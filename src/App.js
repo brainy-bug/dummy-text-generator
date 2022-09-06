@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const baseURL = "https://baconipsum.com/api/?start-with-lorem=1&type=all-meat?";
 
 function App() {
-  const [params, setParams] = useState({ count: "5", option: "" });
+  const [params, setParams] = useState({ count: "", option: "" });
   const [texts, setTexts] = useState([]);
 
   const [clicked, setClicked] = useState(true);
