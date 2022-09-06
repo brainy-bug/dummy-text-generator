@@ -253,6 +253,7 @@ button {
 }
 
 .lorem-text {
+padding: 10px;
   height: 350px;
   overflow: scroll;
   margin-bottom: 1rem;
