@@ -76,7 +76,6 @@ function App() {
               value={params.count}
               min="1"
               id="count"
-              autoFocus={true}
               onChange={handleChange}
             />
           </label>
