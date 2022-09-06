@@ -1,7 +1,7 @@
 # dummy-text generator using React
 
 ## View live project: 
-https://yk-dummy-text.netlify.app.com
+https://yk-dummy-text.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
