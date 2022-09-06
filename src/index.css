@@ -156,7 +156,7 @@ p {
   width: 90vw;
   margin: 0 auto;
   max-width: 40rem;
-  margin-top: 5rem;
+  margin-top: 4.5rem;
   text-align: center;
 }
 @media screen and (min-width: 992px) {
@@ -189,7 +189,7 @@ h3 {
 .underline {
   width: 6rem;
   height: 0.25rem;
-  background: var(--clr-primary-1);
+  background: var(--clr-primary-3);
   margin-left: auto;
   margin-right: auto;
 }
@@ -256,4 +256,5 @@ button {
   height: 350px;
   overflow: scroll;
   margin-bottom: 1rem;
+  border: 3px solid var(--clr-primary-3);
 }
