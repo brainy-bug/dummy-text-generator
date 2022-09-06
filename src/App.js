@@ -6,7 +6,7 @@ function App() {
   const [params, setParams] = useState({ count: "5", option: "" });
   const [texts, setTexts] = useState([]);
 
-  const [clicked, setClicked] = useState(true);
+  const [clicked, setClicked] = useState(false);
   const [render, setRender] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -24,7 +24,7 @@ function App() {
     const name = e.target.name;
     const value = e.target.value;
     setParams({ ...params, [name]: value });
-    setClicked(!clicked);
+    clicked || setClicked(true);
   };
 
   const generateURL = () => {
@@ -101,21 +101,20 @@ function App() {
             </label>
           </div>
         </section>
-        <button
-          type="submit"
-          className="btn"
-          disabled={!clicked ? false : true}
-        >
+        <button type="submit" className="btn" disabled={clicked ? false : true}>
           Generate
         </button>
       </form>
 
       {isVisible && (
-        <article className="lorem-text">
-          {texts.map((text, i) => {
-            return <p key={i}>{text}</p>;
-          })}
-        </article>
+        <>
+          <article className="lorem-text">
+            {texts.map((text, i) => {
+              return <p key={i}>{text.replaceAll(".", "◼")}</p>;
+            })}
+          </article>
+          <p className="attention">Note: After every ◼, marks a sentence</p>
+        </>
       )}
     </section>
   );
