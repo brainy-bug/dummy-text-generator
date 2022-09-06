@@ -64,7 +64,7 @@ function App() {
 
   return (
     <section className="section-center">
-      <h3>Lorem ipsum generator</h3>
+      <h3>Dummy text generator</h3>
       <div className="underline"></div>
       <form className="lorem-form" onSubmit={handleSubmit}>
         <section className="form-inputs">
